@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Cucumber</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- sen şu ana kadar hep Library leri mavendan projene yükledin,
+        peki projeye birine gönderdin, o ne demen gerekiyor, yüklediğin bütün dosyalar
+        projeyle birlikte gitti proje dosyası oldukça kabarık oldu.
+        Ayrıca, her eklemeyi Menuye girerek elle yaptın, artık buna ihtiyacın yok
+        Maven proje ile yeni dönem başladı sen aşağıya yaz-->
+
+        <!--one Selenium-->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.25.0</version>
+        </dependency>
+
+
+        <!--one Cucumber-->
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.19.0</version>
+        </dependency>
+
+        <!--one TestNG-->
+        <!--whatever I need-->
+
+        <!-- Ben sana hepsini alip getireyim, projeyi baskasina gonderdiginde o da
+        sadece kodlari olmasi yeterli, alan kisi de bana gerekli dosyalari al desin
+        ben  yine onun bilgisayarina yukleyeyim
+        -->
+
+    </dependencies>
+
+</project>
