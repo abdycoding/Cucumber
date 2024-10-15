@@ -81,5 +81,45 @@ public class DialogContent extends ParentPage{
 
     }
 
+    @FindBy(xpath = "//ms-dialog-content//mat-select/div")
+    public WebElement countrySelect;
+
+    @FindBy(xpath = "//mat-option[@id='mat-option-1791']")
+    public WebElement nePal;
+
+    @FindBy(xpath = "(//ms-edit-button/button/span)[2]")
+    public WebElement edit;
+
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='budgetAccountIntegrationCode']//input")
+    public WebElement integrationCode;
+
+    @FindBy(xpath = "//ms-integer-field[@formcontrolname='priority']//input")
+    public WebElement priority;
+
+    @FindBy(xpath = "//mat-slide-toggle[@formcontrolname='active']//button")
+    public WebElement toggleBar;
+
+    @FindBy(xpath = "(//ms-save-button[@class='ng-star-inserted']//button)[2]")
+    public WebElement saveClose;
+
+    public  WebElement getWebElement(String strElementName){
+        switch (strElementName){
+            case "addButton": return  this.addButton;
+            case "nameInput": return  this.nameInput;
+            case "codeInput": return  this.codeInput;
+            case"saveButton": return  this.saveButton;
+            case "integrationCode": return  this.integrationCode;
+            case "priority": return  this.priority;
+            case "toggleBar": return  this.toggleBar;
+            case "saveClose": return  this.saveClose;
+
+
+
+        }
+        return null;
+
+    }
+
+
 
 }

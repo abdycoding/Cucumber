@@ -51,4 +51,13 @@ public class _02_CountrySteps {
 
 
     }
+
+    @When("Search for a country name as {string} code as {string}and delete")
+    public void searchForACountryNameAsCodeAsAndDelete(String name, String shortName) {
+
+        dc.mySendKeys(dc.nameInput, name);
+        dc.mySendKeys(dc.codeInput,shortName);
+        dc.myClick(dc.searchButton);
+        dc.myClick(dc.deleteButton);
+    }
 }
