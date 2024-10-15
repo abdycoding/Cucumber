@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class DialogContent extends ParentPage{
@@ -81,10 +82,10 @@ public class DialogContent extends ParentPage{
 
     }
 
-    @FindBy(xpath = "//ms-dialog-content//mat-select/div")
+    @FindBy(xpath = "(//mat-select/div/div/span)[3]")
     public WebElement countrySelect;
 
-    @FindBy(xpath = "//mat-option[@id='mat-option-1791']")
+    @FindBy(xpath = "(//mat-option)[835]")
     public WebElement nePal;
 
     @FindBy(xpath = "(//ms-edit-button/button/span)[2]")
@@ -102,6 +103,8 @@ public class DialogContent extends ParentPage{
     @FindBy(xpath = "(//ms-save-button[@class='ng-star-inserted']//button)[2]")
     public WebElement saveClose;
 
+
+
     public  WebElement getWebElement(String strElementName){
         switch (strElementName){
             case "addButton": return  this.addButton;
@@ -112,6 +115,8 @@ public class DialogContent extends ParentPage{
             case "priority": return  this.priority;
             case "toggleBar": return  this.toggleBar;
             case "saveClose": return  this.saveClose;
+            case "country": return this.countrySelect ;
+            case "nepal": return  this.nePal;
 
 
 

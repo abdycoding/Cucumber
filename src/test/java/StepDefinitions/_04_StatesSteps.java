@@ -26,10 +26,6 @@ public class _04_StatesSteps {
         dc.myClick(dc.addButton);
         dc.myClick(dc.countrySelect);
         dc.myClick(dc.nePal);
-//        dc.mySendKeys(dc.countrySelect, "N"+ Keys.ENTER);
-
-//        Select country=new Select(dc.countrySelect);
-//        country.selectByIndex(109);
         dc.mySendKeys(dc.nameInput,state);
         dc.mySendKeys(dc.shortName, shortName);
         dc.myClick(dc.saveButton);

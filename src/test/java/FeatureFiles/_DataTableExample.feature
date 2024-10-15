@@ -19,7 +19,7 @@ Feature: DataTable example
       | Cristiano | 124 |
 
     #  dataProvider (TestNG için), Senaryo Outline (cucumber)
- #  görevi verilen her değer için, tüm senayo çalışır
+ #  görevi verilen her değer için, tüm senaryo çalışır
  #
  #  DataTable ise , sadece bir step e, çoklu parametre vermek
  #  için kullanılır, sadece 1 kez tüm parametreleri stepin içine atar

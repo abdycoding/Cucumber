@@ -5,6 +5,7 @@ import Pages.LeftNav;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -46,6 +47,7 @@ public class _05_DataTableSteps {
 
         }
 
+
     }
 
     @And("User delete the element from dialog")
@@ -54,4 +56,9 @@ public class _05_DataTableSteps {
         for (int i = 0; i < deleted.size(); i++) {
             dc.deleteItem(deleted.get(i));
     }
-}}
+}
+
+
+
+    }
+
