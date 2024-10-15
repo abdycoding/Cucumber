@@ -18,7 +18,7 @@ Feature: DataTable Functionality
       | nepal     |
 
     And  User sending the keys in DialogContent
-      | nameInput | randomCountry1 |
+      | nameInput | randomCouy1 |
 
 
     And Click on the Element in DialogCOntent
@@ -32,7 +32,7 @@ Feature: DataTable Functionality
       | nepal     |
 
     And  User sending the keys in DialogContent
-      | nameInput | randomCountry1 |
+      | nameInput | randomCouy1 |
 
 
     And Click on the Element in DialogCOntent

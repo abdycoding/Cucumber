@@ -13,6 +13,9 @@ public class LeftNav extends ParentPage {
     @FindBy(xpath = "(//span[text()='Setup'])[1]")
     public WebElement setup;
 
+    @FindBy(xpath = "(//span[text()='Setup'])[4]")
+    public WebElement setup2;
+
     @FindBy(xpath = "(//span[text()='Parameters'])[1]")
     public WebElement parameters;
 
@@ -31,6 +34,14 @@ public class LeftNav extends ParentPage {
     @FindBy(xpath = "(//span[text()='Cities'])[1]")
     public WebElement cities;
 
+    @FindBy(xpath = "(//span[text()='Nationalities'])[1]")
+    public WebElement nationalities;
+
+    @FindBy(xpath = "(//span[text()='Item Categories'])[1]")
+    public WebElement itemCategory;
+
+    @FindBy(xpath = "(//span[text()='Inventory'])[1]")
+    public WebElement Inventory;
 
     public WebElement getWebElement (String strElementName)
     {
@@ -42,6 +53,10 @@ public class LeftNav extends ParentPage {
             case "states" : return  this.states;
             case"fees": return this.fees;
             case "cities": return  this.cities;
+            case "nationalities": return  this.nationalities;
+            case "inventory": return  this.Inventory;
+            case "item_categories": return this.itemCategory;
+            case "setup2": return this.setup2;
 
 
         }

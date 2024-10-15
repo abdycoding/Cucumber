@@ -85,7 +85,7 @@ public class DialogContent extends ParentPage{
     @FindBy(xpath = "(//mat-select/div/div/span)[3]")
     public WebElement countrySelect;
 
-    @FindBy(xpath = "(//mat-option)[835]")
+    @FindBy(xpath = "//mat-option/span[text()=' Nepal ']")
     public WebElement nePal;
 
     @FindBy(xpath = "(//ms-edit-button/button/span)[2]")
@@ -103,7 +103,10 @@ public class DialogContent extends ParentPage{
     @FindBy(xpath = "(//ms-save-button[@class='ng-star-inserted']//button)[2]")
     public WebElement saveClose;
 
-
+@FindBy(xpath = "//mat-chip-grid/div/input")
+public WebElement userType;
+@FindBy(xpath = "//mat-option/span[text()=' Teacher ']")
+public WebElement teacher;
 
     public  WebElement getWebElement(String strElementName){
         switch (strElementName){
@@ -117,6 +120,9 @@ public class DialogContent extends ParentPage{
             case "saveClose": return  this.saveClose;
             case "country": return this.countrySelect ;
             case "nepal": return  this.nePal;
+            case "shortName": return  this.shortName;
+            case "userType": return this.userType;
+            case "teacher": return this.teacher;
 
 
 
