@@ -103,10 +103,16 @@ public class DialogContent extends ParentPage{
     @FindBy(xpath = "(//ms-save-button[@class='ng-star-inserted']//button)[2]")
     public WebElement saveClose;
 
-@FindBy(xpath = "//mat-chip-grid/div/input")
-public WebElement userType;
-@FindBy(xpath = "//mat-option/span[text()=' Teacher ']")
-public WebElement teacher;
+    @FindBy(xpath = "//mat-chip-grid/div/input")
+    public WebElement userType;
+    @FindBy(xpath = "//mat-option/span[text()=' Teacher ']")
+    public WebElement teacher;
+
+    @FindBy(xpath = "//mat-option/span[text()=' Administrator ']")
+    public WebElement administrator;
+
+    @FindBy(xpath = "//mat-option/span[text()=' Student ']")
+    public WebElement student;
 
     public  WebElement getWebElement(String strElementName){
         switch (strElementName){
@@ -122,7 +128,9 @@ public WebElement teacher;
             case "nepal": return  this.nePal;
             case "shortName": return  this.shortName;
             case "userType": return this.userType;
-            case "teacher": return this.teacher;
+            case "Teacher": return this.teacher;
+            case "Administrator": return this.administrator;
+            case "Student": return this.student;
 
 
 

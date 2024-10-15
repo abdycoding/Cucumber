@@ -22,26 +22,23 @@ Feature: DataTable Functionality
 
     And User sending the keys in DialogContent
       | nameInput | <name> |
-    And Click on the Element in DialogCOntent
 
-      | userType | <type> |
-
-
-    And Click on the Element in DialogCOntent
-      | saveButton |
+     And Click on the Element in DialogCOntent
+       | userType   |
+       | <type>     |
+       | saveButton |
 
     Then Success message should be displayed
 
     And  User delete the element from dialog
       | <name> |
-      | <type> |
 
     Then Success message should be displayed
 
     Examples:
-      | name      | type    |
-      | kokoloo12 | teacher |
-      | kokoloo13 | student |
-      | kokoloo14 | teacher |
-      | kokoloo15 | student |
-      | kokoloo16 | teacher |
+      | name      | type          |
+      | kokoloo12 | Teacher       |
+      | kokoloo13 | Student       |
+      | kokoloo14 | Administrator |
+      | kokoloo15 | Student       |
+      | kokoloo16 | Teacher       |
