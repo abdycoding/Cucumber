@@ -62,6 +62,9 @@ public class DialogContent extends ParentPage{
     @FindBy(xpath = "//ms-text-field/input[@placeholder='Name']")
     public WebElement searchInput;
 
+    @FindBy(xpath = "//mat-form-field//input[@placeholder='Name']")
+    public WebElement searchInput2;
+
     @FindBy(xpath = "//ms-search-button/div/button")
     public WebElement searchButton;
 

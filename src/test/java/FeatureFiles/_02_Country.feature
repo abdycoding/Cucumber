@@ -1,5 +1,6 @@
 Feature: Country Functionality
 
+  @RegressionTest
   Scenario: Create a country
 
     Given Navigate to Campus

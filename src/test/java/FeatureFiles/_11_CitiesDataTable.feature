@@ -5,6 +5,7 @@ Feature: DataTable Functionality
     When  Enter Username and password and click login button
     Then User should login successfully
 
+    @SmokeTest
   Scenario: Create a City
 
     And Click on the Element in LeftNav
