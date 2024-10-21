@@ -19,34 +19,32 @@ import java.util.Scanner;
 
 public class _05_Task_GetSpecificData {
     public static void main(String[] args) throws IOException {
-        Scanner input = new Scanner(System.in);
-
-            String value=input.nextLine();
-
-            String s=read(value);
-
-        System.out.println(s);
-
-    }
-
-    public static String read(String str) throws IOException {
 
         String path = "src/test/java/ApachePOI/resource/LoginData.xlsx";
 
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the word you wanted to search for: ");
+            String searchedWord=input.nextLine();
+
+            String result=read(searchedWord, path);
+
+        System.out.println("result: " + result);
+    }
+
+    public static String read(String str, String path) throws IOException {
+        String returnedData="";
         FileInputStream inputStream = new FileInputStream(path);
-
         Workbook workbook = WorkbookFactory.create(inputStream);
-
         Sheet sheet = workbook.getSheetAt(0);
 
         for (int i = 0; i < sheet.getPhysicalNumberOfRows(); i++) {
 
             if (sheet.getRow(i).getCell(0).toString().equalsIgnoreCase(str)) {
                 for (int j = 0; j < sheet.getRow(i).getPhysicalNumberOfCells(); j++) {
-                    System.out.println(sheet.getRow(i).getCell(j) + " ");
+                    returnedData=returnedData+" " + sheet.getRow(i).getCell(j);
                 }
-                System.out.println();
-            }}
-        return str;
+                }}
+        return returnedData;
     }
 }
